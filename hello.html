@@ -16,11 +16,14 @@
             color: red;
             
         }
+        h1{
+            color: gray;
+        }
     </style>
 </head>
 <body>
 
-    <h1 stayle="color:blue;">Wellcome to my WebPage!</h1>
+    <h1 >Wellcome to my WebPage!</h1>
     <h2>Aprendiendo gitHub</h2>
     <div>Comandos Git
         <ol>
@@ -76,6 +79,42 @@
             <ul>
                 <li><span>git pull</span></li>
                 <li>En caso de conflictos aparecerá "CONFLICT: merge conflict"</li>
+            </ul>
+            <li>git log</li>
+            Muestra el historico de commit
+            <br>Pasos: 
+            <ul>
+                <li><span>git log</span></li>
+               Para observar todos desplazamos con las teclas de dirección en la pantalla
+               <li><span>git log --oneline</span></li>
+               Muestra lista de una linea
+               <li><span>git log -X</span></li>
+               Muestra los X(número) commit últimos
+               <li><span>git log -2 -p</span></li>
+               Muestra el commit 2 y el detalle del codigo únicamente de ese commit
+               <li><span>git show "id"</span></li>
+               Muestra el commit y su detelle.
+                El id se obtiene del git log --oneline
+                <br>referencia: https://desarrolloweb.com/articulos/git-log.html
+            </ul>
+            <li>git reset</li>
+            Retorna a un punto anterior del repositorio
+            <br>Pasos: 
+            <ul>
+                <li><span>git reset --hard "commit"</span></li>
+                Para retornar a una confirmación específica
+                <li><span>git reset --hard "origin/master"</span></li>
+                Para retornar a la version del repositorio gitHub
+            </ul>
+            <li>git branch</li>
+            Permite trabajar con ramas
+            <br>Pasos: 
+            <ul>
+                <li><span>git branch</span></li>
+                Muestra las ramas de mi repositorio
+                <li><span>git  checkout -b name</span></li>
+                Crea una rama nueva de nombre "name" <br>
+                Activa la nueva rama para su uso
             </ul>
         </ol>
     </div>
